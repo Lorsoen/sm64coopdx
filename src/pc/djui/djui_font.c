@@ -53,7 +53,7 @@ static void djui_font_title_render_char(char* c) {
     if (*c == ' ') { return; }
 
     u32 index = djui_unicode_get_sprite_index(c);
-    if ((u8)*c < '!' || (u8)*c > '~' + 1) {
+    if ((u8)*c < '!' || (u8)*c > 'É' + 1) {
         char tmp[2] = { 0 };
         tmp[0] = djui_unicode_get_base_char(c);
         index = djui_unicode_get_sprite_index(tmp);
